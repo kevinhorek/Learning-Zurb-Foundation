@@ -1,0 +1,15 @@
+@mixin rounded ($radius: .8em) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+}
+
+.custom-block {
+	$panel-bg: scale-color(#43ac6a, $lightness: -5%);
+	$panel-border-style: double;
+	$panel-border-size: 4px;
+	
+	@include panel($padding: 50px);
+	
+	@include rounded($radius: 2em);
+}

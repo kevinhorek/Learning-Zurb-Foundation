@@ -1,0 +1,12 @@
+
+.columns {
+    border: 1px solid black;
+}
+
+img {
+	width: 100%;
+}
+
+.breadcrumbs {
+	margin: 20px 0;
+}

@@ -1,0 +1,51 @@
+h1 {
+	margin-top: 3rem;
+}
+
+.top-bar {
+	background: $primary-color;
+	
+  .top-bar-section {
+    display: table;
+    margin: auto;
+
+    ul {
+      display: table-cell;
+
+      li {
+
+        &:not(.has-form) a:not(.button) {
+          background: $primary-color;
+          font-size: 1.2rem;
+        }
+
+        &:not(.has-form) a:not(.button):hover {		
+          background: #000;
+        }
+      }
+
+    }
+  }
+
+}
+
+.featured {
+	@media only screen and (min-width: 40.063em) {
+		[class*="column"]+[class*="column"]:last-child {
+			float: left;
+		}
+	}
+}
+
+.panel {
+	
+	@media only screen and (min-width: 40.063em) { 
+		margin-top: 3rem;
+	}
+	
+	@media only screen and (max-width: 64em) { 
+		h4 {
+			margin-top: 1rem;
+		}
+	}
+} 
